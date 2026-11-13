@@ -1,0 +1,377 @@
+/* CONFIGURAÇÕES GERAIS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #000;
+}
+
+/* CABEÇALHO */
+
+.cabecalho {
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 30px 7%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+    display: block;
+}
+
+.menu-certo {
+    display: flex;
+    align-items: center;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.menu a {
+    color: #000;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #7abf30;
+}
+
+.button-request {
+    background-color: white;
+    color: black;
+
+    padding: 15px 25px;
+    border: 1px solid #191a23;
+    border-radius: 12px;
+
+    font-size: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.button-request:hover {
+    background-color: #b9ff66;
+}
+
+/* SEÇÃO PRINCIPAL */
+
+.secao-sobre {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 35px 7% 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.caixa-texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.caixa-texto h1 {
+    font-size: clamp(36px, 4.5vw, 60px);
+    font-weight: 500;
+    line-height: 1.15;
+    margin-bottom: 30px;
+    letter-spacing: -1px;
+}
+
+.caixa-texto p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    max-width: 500px;
+}
+
+.caixa-texto button {
+    background-color: #191a23;
+    color: #fff;
+
+    padding: 20px 35px;
+    border: none;
+    border-radius: 12px;
+
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caixa-texto button:hover {
+    background-color: #b9ff66;
+    color: #000;
+}
+
+.caixa-imagem {
+    flex: 1;
+    min-width: 0;
+}
+
+.caixa-imagem img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+/* SEÇÃO SERVICES */
+
+.services {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 7% 80px;
+}
+
+.services-titulo {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.services-titulo h2 {
+    background-color: #b9ff66;
+    font-size: 36px;
+    font-weight: 500;
+    border-radius: 7px;
+    padding: 2px 8px;
+}
+
+.services-titulo p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 580px;
+}
+
+/* CONTAINER DOS CARDS */
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+/* ESTILO GERAL DOS CARDS */
+
+.card {
+    min-height: 260px;
+    padding: 40px;
+
+    border: 1px solid #191a23;
+    border-radius: 35px;
+    box-shadow: 0 5px 0 #191a23;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    overflow: hidden;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* CORES DOS CARDS */
+
+.card-cinza {
+    background-color: #f3f3f3;
+}
+
+.card-verde {
+    background-color: #b9ff66;
+}
+
+.card-escuro {
+    background-color: #191a23;
+}
+
+/* CONTEÚDO DOS CARDS */
+
+.card-conteudo {
+    height: 180px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    flex: 1;
+    min-width: 0;
+}
+
+.card h3 {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.card h3 span {
+    display: table;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+
+/* DESTAQUES DOS TÍTULOS */
+
+.titulo-verde span {
+    background-color: #b9ff66;
+    color: #000;
+}
+
+.titulo-branco span {
+    background-color: #fff;
+    color: #000;
+}
+
+/* BOTÃO LEARN MORE */
+
+.saiba-mais {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+}
+
+.seta {
+    background-color: #191a23;
+    color: #b9ff66;
+
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 24px;
+    flex-shrink: 0;
+}
+
+.card-escuro .saiba-mais {
+    color: white;
+}
+
+.seta-branca {
+    background-color: white;
+    color: #191a23;
+}
+
+/* IMAGENS DOS CARDS */
+
+.card>img {
+    width: 45%;
+    max-width: 210px;
+    height: 180px;
+    object-fit: contain;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 1000px) {
+
+    .cabecalho {
+        flex-wrap: wrap;
+    }
+
+    .menu ul {
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .secao-sobre {
+        gap: 25px;
+    }
+
+    .card {
+        padding: 25px;
+    }
+
+    .card h3 {
+        font-size: 20px;
+    }
+
+    .card>img {
+        width: 40%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .cabecalho {
+        padding: 25px 5%;
+    }
+
+    .menu ul {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    .secao-sobre {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 5% 60px;
+    }
+
+    .caixa-texto h1 {
+        font-size: 38px;
+    }
+
+    .caixa-texto p {
+        font-size: 16px;
+    }
+
+    .services {
+        padding: 0 5% 60px;
+    }
+
+    .services-titulo {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-bottom: 35px;
+    }
+
+    .container-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        min-height: 230px;
+    }
+}
